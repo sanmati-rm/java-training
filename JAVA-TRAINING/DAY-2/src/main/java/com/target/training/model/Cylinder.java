@@ -39,5 +39,12 @@ public class Cylinder extends Circle{
         return (3.14*radius*radius*height);
     }
 
-
+    /*@Override
+    public String toString() {
+        return "Cylinder{" +
+                "height=" + height +
+                "Area: " + super.getArea() + "," +
+                "Volume: " + getVolume() +
+                '}';
+    } */
 }

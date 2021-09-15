@@ -40,8 +40,7 @@ public class Circle {
         return "Circle{" +
                 "radius=" + radius +
                 ", color='" + color + '\'' +
-                "Area: " + getArea() +
-                //"Volume: " +
+                "Area: " + getArea() + " " +
                 '}';
     }
 
