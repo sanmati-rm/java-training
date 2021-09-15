@@ -13,11 +13,12 @@ public class Assignment12 {
                 new Cylinder(12.34, 10.0, "blue")
         };
 
-        for (Circle circle:circles
-             ) {
+        for (Circle circle:circles)
+        {
             System.out.println(circle);
-            //System.out.println(circle.g);
+            System.out.println(((Cylinder)circle).getVolume());
         }
+
 
     }
 }
