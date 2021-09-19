@@ -16,7 +16,7 @@ public class KeyboardUtil {
 
     public static String getString(String message){
         System.out.println(message);
-        return sc.nextLine();
+        return sc.next();
     }
 
     public static Date getDate(String message){

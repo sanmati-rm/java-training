@@ -11,9 +11,9 @@ import java.util.List;
 public interface ContactsDao {
 
     //CRUD operations
-    public void addContact(Contact contact) throws DaoException,ParseException;
+    public void addContact(Contact contact) throws DaoException;
     public Contact getContact(int id) throws DaoException;
-    public void updateContact(Contact contact) throws DaoException,ParseException;
+    public void updateContact(Contact contact) throws DaoException;
     public void deleteContact(int id) throws DaoException;
 
     // Queries
