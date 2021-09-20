@@ -34,11 +34,12 @@ public class ArrayListContactsDao implements ContactsDao {
         contacts.add(new Contact(2,"Sam","R M",Gender.FEMALE,"sam2@gmail.com","9845634097","Yelahanka","Bangalore","Karnataka",560064,"India",bDate));
         contacts.add(new Contact(3,"Sannu","R M",Gender.FEMALE,"sam3@gmail.com","9845634096","Yelahanka","Bangalore","Karnataka",560064,"India",bDate));
 
+
     }
 
     @Override
     public void addContact(Contact contact) throws DaoException {
-
+        contacts.add(contact);
     }
 
     @Override

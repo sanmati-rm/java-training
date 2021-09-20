@@ -12,36 +12,42 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HashMapContactsDao implements ContactsDao1{
+public class HashMapContactsDao implements ContactsDao1 {
 
     private Map<Integer, Contact> contacts = new HashMap<>();
 
-    @Override
-    public void addContact(Contact contact) throws DaoException {
+    public HashMapContactsDao() {
 
         String date = "21/10/1999";
         Date bDate = null;
-        try{
-            bDate = new SimpleDateFormat("dd/MM/yyyy").parse(date);
-        }
-        catch (ParseException e)
+        try {
+        bDate = new SimpleDateFormat("dd/MM/yyyy").parse(date); }
+        catch(ParseException e)
         {
-            System.out.println("Date not parsed");
+        System.out.println("Date not parsed");
         }
 
 
-        Contact c1 = new Contact(1,"Sanmati","R M", Gender.FEMALE,"sam@gmail.com","9845634098","Yelahanka","Bangalore","Karnataka",560064,"India",bDate);
-        Contact c2 = new Contact(2,"Sam","R M",Gender.FEMALE,"sam2@gmail.com","9845634097","Yelahanka","Bangalore","Karnataka",560064,"India",bDate);
-        Contact c3 = new Contact(3,"Sannu","R M",Gender.FEMALE,"sam3@gmail.com","9845634096","Yelahanka","Bangalore","Karnataka",560064,"India",bDate);
+        Contact c1 = new Contact(1, "Sanmati", "R M", Gender.FEMALE, "sam@gmail.com", "9845634098", "Yelahanka", "Bangalore", "Karnataka", 560064, "India", bDate);
+        Contact c2 = new Contact(2, "Sam", "R M", Gender.FEMALE, "sam2@gmail.com", "9845634097", "Yelahanka", "Bangalore", "Karnataka", 560064, "India", bDate);
+        Contact c3 = new Contact(3, "Sannu", "R M", Gender.FEMALE, "sam3@gmail.com", "9845634096", "Yelahanka", "Bangalore", "Karnataka", 560064, "India", bDate);
 
-        contacts.put(c1.getId(), c1);
-        contacts.put(c2.getId(), c2);
+        contacts.put(c1.getId(),c1);
+        contacts.put(c2.getId(),c2);
         contacts.put(c3.getId(),c3);
     }
 
     @Override
+    public void addContact(Contact contact) throws DaoException {
+
+        contacts.put(contact.getId(), contact);
+    }
+
+    @Override
     public Contact getContact(int id) throws DaoException {
-        return null;
+
+
+        return contacts.get(id);
     }
 
     @Override

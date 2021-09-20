@@ -29,7 +29,7 @@ public class Assignment19 {
                 case 1:
                     addNewContact();
                     break;
-                case 2: //listAllContacts();
+                case 2: listAllContacts();
                     break;
                 case 3: //updateContact();
                     break;
@@ -126,29 +126,32 @@ public class Assignment19 {
         }
     }
 
-   /* private void listAllContacts() {
+   private void listAllContacts() {
 
         try {
             Map<Integer, Contact> list =  dao.getContacts();
             line('=');
             System.out.printf("%-10s %-40s %-40s\n", "ID", "Name", "LName");
             line('=');
-            for (Contact c : list) {
-                System.out.printf("%-10d %-40s %-40s\n", c.getId(), c.getFirstname(), c.getLastname());
-            }
+            System.out.println(Arrays.asList(list));
             line('-');
         } catch (DaoException e) {
             System.out.println("There was a problem");
         }
-    }*/
+    }
 
     private void getContactById() {
 
-        Map<Integer, Contact> list = new HashMap<>();
-        int id = KeyboardUtil.getInt("Enter id to search: ");
-        if (list.containsKey(id)) {
-            Contact c = list.get(id);
-            System.out.println(c);
+        try{
+            Integer id = KeyboardUtil.getInt("Enter ID of contact to be fetched");
+            Contact c = dao.getContact(id);
+            if(c==null)
+                System.out.println("Contact not found");
+            else
+                System.out.println(c);
+        }
+        catch (DaoException e){
+            System.out.println("There was a problem");
         }
     }
 

@@ -1,0 +1,108 @@
+[DEBUG] 2021-09-20 10:05:06,515 main            com.target.training.programs.LoggingDemo [  12] this is a debug message
+[ INFO] 2021-09-20 10:05:06,517 main            com.target.training.programs.LoggingDemo [  13] this is a info message
+[ WARN] 2021-09-20 10:05:06,517 main            com.target.training.programs.LoggingDemo [  14] this is a warn message
+[ERROR] 2021-09-20 10:05:06,517 main            com.target.training.programs.LoggingDemo [  15] this is a error message
+[TRACE] 2021-09-20 10:05:31,597 main            com.target.training.programs.LoggingDemo [  11] This is a trace message
+[DEBUG] 2021-09-20 10:05:31,598 main            com.target.training.programs.LoggingDemo [  12] this is a debug message
+[ INFO] 2021-09-20 10:05:31,599 main            com.target.training.programs.LoggingDemo [  13] this is a info message
+[ WARN] 2021-09-20 10:05:31,599 main            com.target.training.programs.LoggingDemo [  14] this is a warn message
+[ERROR] 2021-09-20 10:05:31,599 main            com.target.training.programs.LoggingDemo [  15] this is a error message
+[DEBUG] 2021-09-20 11:01:13,069 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 1
+[DEBUG] 2021-09-20 11:01:13,071 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 2
+[DEBUG] 2021-09-20 11:01:13,071 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 3
+[DEBUG] 2021-09-20 11:01:13,069 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 100
+[DEBUG] 2021-09-20 11:01:13,071 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 4
+[DEBUG] 2021-09-20 11:01:13,072 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 5
+[DEBUG] 2021-09-20 11:01:13,074 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 6
+[DEBUG] 2021-09-20 11:01:13,074 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 7
+[DEBUG] 2021-09-20 11:01:13,074 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 8
+[DEBUG] 2021-09-20 11:01:13,074 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 9
+[DEBUG] 2021-09-20 11:01:13,074 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 10
+[DEBUG] 2021-09-20 11:27:33,614 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 1
+[DEBUG] 2021-09-20 11:27:33,615 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 100
+[DEBUG] 2021-09-20 11:27:33,617 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 2
+[DEBUG] 2021-09-20 11:27:33,617 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 101
+[DEBUG] 2021-09-20 11:27:33,617 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 3
+[DEBUG] 2021-09-20 11:27:33,618 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 102
+[DEBUG] 2021-09-20 11:27:33,618 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 4
+[DEBUG] 2021-09-20 11:27:33,619 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 103
+[DEBUG] 2021-09-20 11:27:33,619 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 5
+[DEBUG] 2021-09-20 11:27:33,620 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 104
+[DEBUG] 2021-09-20 11:27:33,620 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 6
+[DEBUG] 2021-09-20 11:27:33,620 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 105
+[DEBUG] 2021-09-20 11:27:33,620 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 7
+[DEBUG] 2021-09-20 11:27:33,620 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 106
+[DEBUG] 2021-09-20 11:27:33,620 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 8
+[DEBUG] 2021-09-20 11:27:33,620 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 107
+[DEBUG] 2021-09-20 11:27:33,621 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 9
+[DEBUG] 2021-09-20 11:27:33,622 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 108
+[DEBUG] 2021-09-20 11:27:33,622 main            com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 10
+[DEBUG] 2021-09-20 11:27:33,622 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 109
+[DEBUG] 2021-09-20 11:27:33,622 Thread-0        com.target.training.programs.ThreadDemo [   9] Inside main, value of i is 110
+[DEBUG] 2021-09-20 11:33:33,003 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 0
+[DEBUG] 2021-09-20 11:33:33,005 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 1
+[DEBUG] 2021-09-20 11:33:33,005 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 2
+[DEBUG] 2021-09-20 11:33:33,005 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 3
+[DEBUG] 2021-09-20 11:33:33,005 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 4
+[DEBUG] 2021-09-20 11:33:33,005 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 5
+[DEBUG] 2021-09-20 11:33:33,007 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 6
+[DEBUG] 2021-09-20 11:33:33,007 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 7
+[DEBUG] 2021-09-20 11:33:33,007 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 8
+[DEBUG] 2021-09-20 11:33:33,007 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 9
+[DEBUG] 2021-09-20 11:33:33,007 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 10
+[DEBUG] 2021-09-20 11:35:26,070 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 0
+[DEBUG] 2021-09-20 11:35:26,070 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 0
+[DEBUG] 2021-09-20 11:35:26,072 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 1
+[DEBUG] 2021-09-20 11:35:26,073 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 1
+[DEBUG] 2021-09-20 11:35:26,073 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 2
+[DEBUG] 2021-09-20 11:35:26,073 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 2
+[DEBUG] 2021-09-20 11:35:26,073 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 3
+[DEBUG] 2021-09-20 11:35:26,074 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 3
+[DEBUG] 2021-09-20 11:35:26,075 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 4
+[DEBUG] 2021-09-20 11:35:26,075 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 4
+[DEBUG] 2021-09-20 11:35:26,076 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 5
+[DEBUG] 2021-09-20 11:35:26,076 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 6
+[DEBUG] 2021-09-20 11:35:26,076 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 5
+[DEBUG] 2021-09-20 11:35:26,076 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 7
+[DEBUG] 2021-09-20 11:35:26,077 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 6
+[DEBUG] 2021-09-20 11:35:26,077 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 8
+[DEBUG] 2021-09-20 11:35:26,077 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 7
+[DEBUG] 2021-09-20 11:35:26,078 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 9
+[DEBUG] 2021-09-20 11:35:26,079 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 8
+[DEBUG] 2021-09-20 11:35:26,079 main            com.target.training.programs.RunnableAsThreadDemo [  18] Inside thread main value of i is 10
+[DEBUG] 2021-09-20 11:35:26,079 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 9
+[DEBUG] 2021-09-20 11:35:26,079 Thread-0        com.target.training.programs.RunnableAsThreadDemo [  11] Inside thread Thread-0 value of i is 10
+[DEBUG] 2021-09-20 11:54:40,638 main            com.target.training.programs.WaitForThreadsToFinishDemo [  26] Sanmati
+[DEBUG] 2021-09-20 11:54:40,639 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=0
+[DEBUG] 2021-09-20 11:54:40,639 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=0
+[DEBUG] 2021-09-20 11:54:40,642 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=1
+[DEBUG] 2021-09-20 11:54:40,642 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=1
+[DEBUG] 2021-09-20 11:54:40,643 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=2
+[DEBUG] 2021-09-20 11:54:40,645 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=2
+[DEBUG] 2021-09-20 11:54:40,646 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=3
+[DEBUG] 2021-09-20 11:54:40,646 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=3
+[DEBUG] 2021-09-20 11:54:40,646 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=4
+[DEBUG] 2021-09-20 11:54:40,646 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=4
+[DEBUG] 2021-09-20 11:54:40,646 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=5
+[DEBUG] 2021-09-20 11:54:40,647 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=5
+[DEBUG] 2021-09-20 11:54:40,647 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=6
+[DEBUG] 2021-09-20 11:54:40,647 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=6
+[DEBUG] 2021-09-20 11:54:40,647 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=7
+[DEBUG] 2021-09-20 11:54:40,647 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=7
+[DEBUG] 2021-09-20 11:54:40,649 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=8
+[DEBUG] 2021-09-20 11:54:40,650 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=8
+[DEBUG] 2021-09-20 11:54:40,650 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=9
+[DEBUG] 2021-09-20 11:54:40,650 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=9
+[DEBUG] 2021-09-20 11:54:40,650 Thread-0        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hello, i=10
+[DEBUG] 2021-09-20 11:54:40,650 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=10
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=11
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=12
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=13
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=14
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=15
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=16
+[DEBUG] 2021-09-20 11:54:40,651 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=17
+[DEBUG] 2021-09-20 11:54:40,652 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=18
+[DEBUG] 2021-09-20 11:54:40,652 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=19
+[DEBUG] 2021-09-20 11:54:40,652 Thread-1        com.target.training.programs.WaitForThreadsToFinishDemo [  11] msd = Hi, i=20
+[DEBUG] 2021-09-20 11:54:40,652 main            com.target.training.programs.WaitForThreadsToFinishDemo [  31] End of main
