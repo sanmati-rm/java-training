@@ -1,0 +1,63 @@
+[DEBUG] 2021-09-21 11:02:20,079 main            com.target.training.programs.ConnectToDatabase [  17] org.h2.Driver@7cbd213e
+[DEBUG] 2021-09-21 11:02:51,796 main            com.target.training.programs.ConnectToDatabase [  17] org.h2.Driver
+[DEBUG] 2021-09-21 11:06:11,748 main            com.target.training.programs.ConnectToDatabase [  17] org.h2.Driver
+[DEBUG] 2021-09-21 11:06:11,750 main            com.target.training.programs.ConnectToDatabase [  17] com.mysql.cj.jdbc.Driver
+[DEBUG] 2021-09-21 11:06:11,750 main            com.target.training.programs.ConnectToDatabase [  17] org.postgresql.Driver
+[DEBUG] 2021-09-21 11:09:01,849 main            com.target.training.programs.ConnectToDatabase [  20] org.h2.Driver
+[DEBUG] 2021-09-21 11:09:01,852 main            com.target.training.programs.ConnectToDatabase [  20] com.mysql.cj.jdbc.Driver
+[DEBUG] 2021-09-21 11:09:01,852 main            com.target.training.programs.ConnectToDatabase [  20] org.postgresql.Driver
+[DEBUG] 2021-09-21 11:11:12,039 main            com.target.training.programs.ConnectToDatabase [  20] org.h2.Driver
+[DEBUG] 2021-09-21 11:11:12,041 main            com.target.training.programs.ConnectToDatabase [  20] com.mysql.cj.jdbc.Driver
+[DEBUG] 2021-09-21 11:11:12,041 main            com.target.training.programs.ConnectToDatabase [  20] org.postgresql.Driver
+[DEBUG] 2021-09-21 11:11:12,096 main            com.target.training.programs.ConnectToDatabase [  23] org.h2.jdbc.JdbcConnection
+[DEBUG] 2021-09-21 11:14:17,093 main            com.target.training.programs.ConnectToDatabase [  20] These JDBC drivers are registered
+[DEBUG] 2021-09-21 11:14:17,131 main            com.target.training.programs.ConnectToDatabase [  21] org.h2.Driver
+[DEBUG] 2021-09-21 11:14:17,132 main            com.target.training.programs.ConnectToDatabase [  21] com.mysql.cj.jdbc.Driver
+[DEBUG] 2021-09-21 11:14:17,132 main            com.target.training.programs.ConnectToDatabase [  21] org.postgresql.Driver
+[DEBUG] 2021-09-21 11:14:17,190 main            com.target.training.programs.ConnectToDatabase [  24] org.h2.jdbc.JdbcConnection
+[DEBUG] 2021-09-21 11:16:19,843 main            com.target.training.programs.ConnectToDatabase [  20] These JDBC drivers are registered
+[DEBUG] 2021-09-21 11:16:19,880 main            com.target.training.programs.ConnectToDatabase [  21] org.h2.Driver
+[DEBUG] 2021-09-21 11:16:19,881 main            com.target.training.programs.ConnectToDatabase [  21] com.mysql.cj.jdbc.Driver
+[DEBUG] 2021-09-21 11:16:19,881 main            com.target.training.programs.ConnectToDatabase [  21] org.postgresql.Driver
+[DEBUG] 2021-09-21 11:16:19,948 main            com.target.training.programs.ConnectToDatabase [  24] Conn is an instance of org.h2.jdbc.JdbcConnection
+[DEBUG] 2021-09-21 11:36:23,191 main            com.target.training.programs.ConnectToDatabase [  21] These JDBC drivers are registered
+[DEBUG] 2021-09-21 11:36:23,231 main            com.target.training.programs.ConnectToDatabase [  22] org.h2.Driver
+[DEBUG] 2021-09-21 11:36:23,231 main            com.target.training.programs.ConnectToDatabase [  22] com.mysql.cj.jdbc.Driver
+[DEBUG] 2021-09-21 11:36:23,232 main            com.target.training.programs.ConnectToDatabase [  22] org.postgresql.Driver
+[DEBUG] 2021-09-21 11:36:23,299 main            com.target.training.programs.ConnectToDatabase [  26] Conn is an instance of org.h2.jdbc.JdbcConnection
+[DEBUG] 2021-09-21 11:44:18,246 main            com.target.training.programs.CreateTable [  27] SQL command executed successfully on H2 server
+[ERROR] 2021-09-21 11:45:28,836 main            com.target.training.programs.CreateTable [  31] There was an error
+org.h2.jdbc.JdbcSQLException: Table "PRODUCTS" already exists; SQL statement:
+create table products(
+ id integer primary key,
+ name varchar(50) not null,
+ price double
+) [42101-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:86)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:399)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:165)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:623)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:237)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.target.training.programs.CreateTable.main(CreateTable.java:26)
+[ WARN] 2021-09-21 12:08:15,929 main            com.target.training.programs.AddProductRecords [  36] there was an error - Syntax error in SQL statement "INSERT INTO PRODUCTS VALUES(1,'headphones',2000.000000 [*]"; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into products values(1,'headphones',2000.000000 [42001-197]
+[ WARN] 2021-09-21 12:39:24,471 main            com.target.training.programs.PreparedStatementDemo [  40] there was an error - This method is not allowed for a prepared statement; use a regular statement instead. [90130-197]
+[ WARN] 2021-09-21 12:40:11,353 main            com.target.training.programs.PreparedStatementDemo [  40] there was an error - Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRODUCTS(ID)"; SQL statement:
+insert into products values(?,?,?) [23505-197]
+[ WARN] 2021-09-21 12:40:41,683 main            com.target.training.programs.PreparedStatementDemo [  40] there was an error - Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRODUCTS(ID)"; SQL statement:
+insert into products values (?,?,?) [23505-197]
+[ WARN] 2021-09-21 12:52:58,978 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
+[ WARN] 2021-09-21 12:53:50,474 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
+[ WARN] 2021-09-21 12:54:08,397 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
+[ WARN] 2021-09-21 12:55:16,808 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
+[ WARN] 2021-09-21 12:55:47,611 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
+[ WARN] 2021-09-21 12:56:14,390 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
