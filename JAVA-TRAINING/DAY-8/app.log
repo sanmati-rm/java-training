@@ -1,0 +1,57 @@
+[ERROR] 2021-09-22 11:27:12,396 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+java.sql.SQLSyntaxErrorException: Table 'products' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:26)
+[ERROR] 2021-09-22 11:27:38,569 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+org.postgresql.util.PSQLException: ERROR: relation "products" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:26)
+[DEBUG] 2021-09-22 11:43:08,585 main            com.target.training.programs.GetAllProducts [  27] id = 1, name = Iphone, price = 70000.0
+[DEBUG] 2021-09-22 11:44:07,913 main            com.target.training.programs.GetAllProducts [  28] id = 1, name = Iphone, price = 70000.0
+[DEBUG] 2021-09-22 11:44:07,915 main            com.target.training.programs.GetAllProducts [  28] id = 2, name = Headphones, price = 20000.0
+[DEBUG] 2021-09-22 11:44:07,915 main            com.target.training.programs.GetAllProducts [  28] id = 3, name = Fast-Charger, price = 2000.0
+[DEBUG] 2021-09-22 11:44:07,915 main            com.target.training.programs.GetAllProducts [  28] id = 4, name = watch, price = 30000.0
+[DEBUG] 2021-09-22 11:44:51,078 main            com.target.training.programs.GetAllProducts [  28] id = 1, name = IPhone-12, price = 70000.0
+[DEBUG] 2021-09-22 11:44:51,079 main            com.target.training.programs.GetAllProducts [  28] id = 2, name = Headphones, price = 30000.0
+[DEBUG] 2021-09-22 11:44:51,079 main            com.target.training.programs.GetAllProducts [  28] id = 3, name = Charger, price = 1000.0
+[DEBUG] 2021-09-22 11:44:51,080 main            com.target.training.programs.GetAllProducts [  28] id = 4, name = Watch, price = 20000.0
+[DEBUG] 2021-09-22 11:46:33,522 main            com.target.training.programs.GetAllProducts [  28] id = 1, name = headphones, price = 2000.0
+[DEBUG] 2021-09-22 11:46:33,524 main            com.target.training.programs.GetAllProducts [  28] id = 2, name = laptop, price = 70000.0
+[DEBUG] 2021-09-22 11:46:33,524 main            com.target.training.programs.GetAllProducts [  28] id = 3, name = mouse, price = 3000.0
+[DEBUG] 2021-09-22 11:46:33,524 main            com.target.training.programs.GetAllProducts [  28] id = 5, name = phone, price = 70000.0
+[DEBUG] 2021-09-22 12:01:10,050 main            com.target.training.programs.GetProductById [  28] id = 3, name = "Fast-Charger", price = 2000.0
+[ WARN] 2021-09-22 12:01:18,207 main            com.target.training.programs.GetProductById [  34] No product data found for id 9
+[ERROR] 2021-09-22 12:46:39,762 main            com.target.training.programs.CreateContactsTable [  37] There was an error
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'gender varchar(10)
+ email varchar(50) 
+ phone varchar(50) 
+ address varchar(50)
+' at line 5
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.target.training.programs.CreateContactsTable.main(CreateContactsTable.java:32)
+[ERROR] 2021-09-22 12:47:09,856 main            com.target.training.programs.CreateContactsTable [  37] There was an error
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'gender varchar(10)
+ email varchar(50) 
+ phone varchar(50) 
+ address varchar(50)
+' at line 5
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.target.training.programs.CreateContactsTable.main(CreateContactsTable.java:32)
+[DEBUG] 2021-09-22 12:48:14,987 main            com.target.training.programs.CreateContactsTable [  33] SQL command executed successfully on database server

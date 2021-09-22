@@ -61,3 +61,66 @@ insert into products values (?,?,?) [23505-197]
 [ WARN] 2021-09-21 12:55:16,808 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
 [ WARN] 2021-09-21 12:55:47,611 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
 [ WARN] 2021-09-21 12:56:14,390 main            com.target.training.programs.AddProductRecords [  36] there was an error - null
+[ERROR] 2021-09-22 10:38:36,842 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+org.h2.jdbc.JdbcSQLException: Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): localhost" [90067-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:451)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:332)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.target.training.utils.DbUtil.createConnection(DbUtil.java:22)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:23)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:103)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:83)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:447)
+	... 8 more
+[DEBUG] 2021-09-22 10:39:33,047 main            com.target.training.programs.CreateProductsTable [  27] SQL command executed successfully on H2 server
+[ERROR] 2021-09-22 10:40:51,324 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:2345/target_training_db
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.target.training.utils.DbUtil.createConnection(DbUtil.java:22)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:23)
+[ERROR] 2021-09-22 10:42:59,043 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:2345/target_training_db
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.target.training.utils.DbUtil.createConnection(DbUtil.java:22)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:23)
+[ERROR] 2021-09-22 11:05:25,267 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:2345/target_training_db
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.target.training.utils.DbUtil.createConnection(DbUtil.java:22)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:23)
+[ERROR] 2021-09-22 11:06:13,389 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:2345/target_training_db
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.target.training.utils.DbUtil.createConnection(DbUtil.java:22)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:23)
+[DEBUG] 2021-09-22 11:06:38,841 main            com.target.training.programs.CreateProductsTable [  27] SQL command executed successfully on H2 server
+[ERROR] 2021-09-22 11:06:49,871 main            com.target.training.programs.CreateProductsTable [  31] There was an error
+org.postgresql.util.PSQLException: ERROR: relation "products" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.target.training.programs.CreateProductsTable.main(CreateProductsTable.java:26)
