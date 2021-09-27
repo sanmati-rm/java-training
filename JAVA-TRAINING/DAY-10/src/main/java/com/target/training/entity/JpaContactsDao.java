@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.TypedQuery;
 
 @Slf4j
 public class JpaContactsDao implements ContactsDao{
@@ -71,7 +72,13 @@ public class JpaContactsDao implements ContactsDao{
 
     @Override
     public List<Contact> getContacts() throws DaoException {
-        return null;
+
+        String jpql = "from contacts";
+        EntityManager em = JpaUtil.createEntityManager();
+        TypedQuery<Contact> qry = em.createQuery(jpql, Contact.class);
+        return qry.getResultList();
+
+
     }
 
     @Override

@@ -1,0 +1,26 @@
+
+7	java:S131""Add a default case to this switch.(¨ÕÉ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ı—®üÿÿÿÿ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(ÜóÎØ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(’²ÿ­ûÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ÌĞÊ×şÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(ÚÛ¡ñıÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+f
+java:S3457X"Q%n should be used in place of \n to produce the platform-specific line separator.(Ï±%
+M	java:S106X"9Replace this use of System.out or System.err by a logger.(Ï±%
+g
+java:S3457["Q%n should be used in place of \n to produce the platform-specific line separator.(Íù§ü
+N	java:S106["9Replace this use of System.out or System.err by a logger.(Íù§ü
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(Èîâ
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+N	java:S106l"9Replace this use of System.out or System.err by a logger.(Èîâ
+S	java:S106v"9Replace this use of System.out or System.err by a logger.(ïÚâÀşÿÿÿÿ
+M	java:S106w"9Replace this use of System.out or System.err by a logger.(¯¡µl
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(æ»ÕÓüÿÿÿÿ
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(²›Éÿÿÿÿÿ
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(Ø©é¡ùÿÿÿÿ
+N	java:S106{"9Replace this use of System.out or System.err by a logger.(äòûÌ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ö›ÈÙ
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(ö›ÈÙ

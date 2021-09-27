@@ -19,6 +19,8 @@ public class Contact {
     private int id;
     private String firstname;
     private String lastname;
+
+    @Enumerated(EnumType.STRING)
     private Gender gender;
     private String email;
     private String phone;
