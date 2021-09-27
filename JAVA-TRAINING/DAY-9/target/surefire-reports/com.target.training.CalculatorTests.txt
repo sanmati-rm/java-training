@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.target.training.CalculatorTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in com.target.training.CalculatorTests

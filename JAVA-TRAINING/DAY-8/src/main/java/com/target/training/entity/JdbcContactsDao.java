@@ -32,7 +32,7 @@ public class JdbcContactsDao implements ContactsDao {
             stmt.setString(9, contact.getState());
             stmt.setString(10, contact.getPincode());
             stmt.setString(11, contact.getCountry());
-            stmt.setDate(12, contact.getBirthDate());
+            stmt.setDate(12, new java.sql.Date(contact.getBirthDate().getTime()));
             stmt.execute();
         } catch (Exception e) {
             throw new DaoException(e); // wrapping "e" with a new instance of DaoException
@@ -42,7 +42,31 @@ public class JdbcContactsDao implements ContactsDao {
 
     @Override
     public Contact getContact(int id) throws DaoException {
-        return null;
+
+        String sql = "select from contacts where id=?";
+        try(
+                Connection conn = DbUtil.createConnection();
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery(sql);
+                ){
+            return(new Contact(rs.getInt("id"),
+                    rs.getString("firstname"),
+                    rs.getString("lastname"),
+                    Gender.valueOf(rs.getString("gender")),
+                    rs.getString("email"),
+                    rs.getString("phone"),
+                    rs.getString("address"),
+                    rs.getString("city"),
+                    rs.getString("state"),
+                    rs.getString("pincode"),
+                    rs.getString("country"),
+                    rs.getDate("dob")));
+
+        }
+        catch (Exception e){
+            throw new DaoException(e);
+        }
+
     }
 
     @Override

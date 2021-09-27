@@ -1,0 +1,17 @@
+
+A
+java:S1659!"&Declare "intCount" on a separate line.(·­ùðÿÿÿÿÿ
+<
+java:S1659!"!Declare "sum" on a separate line.(·­ùðÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(è×¦™
+Q	java:S125"<This block of commented-out lines of code should be removed.(ýÃ€Ä
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(–ž—µ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(™ûÜ·
+>	java:S1083")Either remove or fill this block of code.(°‘’É
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(·‘žƒùÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ÂæÐýúÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ò‡¿¯ýÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(ßÌ¹¦
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(¯„ýùÿÿÿÿ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(µÝÿûÿÿÿÿ

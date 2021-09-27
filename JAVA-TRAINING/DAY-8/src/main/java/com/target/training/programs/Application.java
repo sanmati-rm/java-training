@@ -7,7 +7,7 @@ import com.target.training.entity.ContactsDao;
 import com.target.training.entity.Contact;
 import com.target.training.utils.KeyboardUtil;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 public class Application {
@@ -35,8 +35,7 @@ public class Application {
                 case 2:
                     listContacts();
                     break;
-                case 3:
-                    System.out.println("Searching by id; TBD");
+                case 3: getContactById();
                     break;
                 case 4:
                     System.out.println("Search by price range");
@@ -48,6 +47,8 @@ public class Application {
 
         System.out.println("Bye!");
     }
+
+
 
     void line(char pattern) {
         for (int i = 1; i <= 80; i++) {
@@ -107,19 +108,33 @@ public class Application {
         } catch (DaoException e) {
             System.out.println("There was a problem");
         }
+    }
+
+    private void getContactById() {
+
+        int id = KeyboardUtil.getInt("Enter ID of contact to be searched");
+
+        try {
+            Contact c = dao.getContact(id);
+            System.out.println(c);
+
+        } catch (DaoException e) {
+            System.out.println("There was a problem");
+        }
 
     }
 
     int menu() {
         line('.');
         int choice = -1;
+
         do {
             System.out.println("0. Exit");
-            System.out.println("1. Add new product");
-            System.out.println("2. List all products");
+            System.out.println("1. Add new contact");
+            System.out.println("2. List all contacts");
             System.out.println("3. Search by id");
             System.out.println("4. Search by price range");
-            System.out.println("5. Update");
+            System.out.println("5. Update contact");
             try {
                 choice = KeyboardUtil.getInt("Enter your choice: ");
                 if (choice < 0 || choice > 5) {

@@ -1,0 +1,15 @@
+
+8
+java:S1659
+""Declare "year" on a separate line.(ÍÁ›¼
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ıã‡ûÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(¦ş˜üÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(ğİ…®úÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(ğòÏé
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(×•œ²
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(´ ¿½
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(ˆë¼±
+V
+java:S1126\"AReplace this if-then-else statement by a single return statement.(Ï®
+n
+java:S1488V"YImmediately return this expression instead of assigning it to the temporary variable "d".(…æ§

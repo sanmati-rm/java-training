@@ -2,7 +2,8 @@ package com.target.training.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.sql.Date;
+
+import java.util.Date;
 import java.util.Scanner;
 
 public class KeyboardUtil {
@@ -27,13 +28,14 @@ public class KeyboardUtil {
     public static Date getDate(String message){
         System.out.println(message);
         String s = sc.next();
-        Date date = null;
+        SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
+        Date dob = new Date();
         try {
-            date = Date.valueOf(s);
+            dob = date.parse(s);
         } catch (Exception e) {
             System.out.println("Parsing Date error" + e);
         }
-        return date;
+        return dob;
 
 
     }

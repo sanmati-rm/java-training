@@ -1,0 +1,23 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ßÑ‡°ÿÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(ËŠ”´ÿÿÿÿÿ
+t
+java:S2293p"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßîõ¦ùÿÿÿÿ
+A
+java:S1168w"+Return an empty collection instead of null.(¥¹ï
+t
+java:S2293}"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßîõ¦ùÿÿÿÿ
+B
+java:S1168ƒ"+Return an empty collection instead of null.(¥¹ï
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßîõ¦ùÿÿÿÿ
+B
+java:S1168•"+Return an empty collection instead of null.(¥¹ï
+`
+java:S1192!"JDefine a constant instead of duplicating this literal "Yelahanka" 3 times.(óîëÀ
+`
+java:S1192!"JDefine a constant instead of duplicating this literal "Bangalore" 3 times.(óîëÀ
+`
+java:S1192!"JDefine a constant instead of duplicating this literal "Karnataka" 3 times.(óîëÀ
+\
+java:S1192!"FDefine a constant instead of duplicating this literal "India" 3 times.(óîëÀ

@@ -24,6 +24,9 @@ public class Assignment14 {
 
         for (Shape shape : shapes) {
             System.out.println(shape);
+            //if(shape instanceof Circle2)
+            //    System.out.println(((Circle2)shape).getRadius());
+
         }
 
     }

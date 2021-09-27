@@ -1,6 +1,5 @@
 package com.target.training.entity;
 
-import com.target.training.entity.Contact;
 import com.target.training.exception.DaoException;
 
 import java.util.Date;

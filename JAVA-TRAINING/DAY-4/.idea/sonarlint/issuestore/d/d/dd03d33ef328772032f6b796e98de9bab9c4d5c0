@@ -1,0 +1,45 @@
+
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(’²ÿ­ûÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.( öŠÔ
+M	java:S106D"9Replace this use of System.out or System.err by a logger.(ø 
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(ö›ÈÙ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(ö›ÈÙ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(ÌĞÊ×şÿÿÿÿ
+S	java:S106Z"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(ØĞ à
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(ËŠ”´ÿÿÿÿÿ
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(Úš¡‚úÿÿÿÿ
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(ÚÛ¡ñıÿÿÿÿ
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+g
+java:S3457…"Q%n should be used in place of \n to produce the platform-specific line separator.(Ï±%
+N	java:S106…"9Replace this use of System.out or System.err by a logger.(Ï±%
+o
+java:S3457ˆ"Q%n should be used in place of \n to produce the platform-specific line separator.(Íù§ü8Û§—À/
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(Íù§ü
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106™"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106¢"9Replace this use of System.out or System.err by a logger.(üƒÒÔ
+O	java:S106¤"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106­"9Replace this use of System.out or System.err by a logger.(²Êâ
+O	java:S106¯"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+O	java:S106²"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106»"9Replace this use of System.out or System.err by a logger.(²Êâ
+O	java:S106½"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+O	java:S106À"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106É"9Replace this use of System.out or System.err by a logger.(²Êâ
+O	java:S106Í"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+O	java:S106Ò"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106Û"9Replace this use of System.out or System.err by a logger.(²Êâ
+T	java:S106İ"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+O	java:S106á"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106ê"9Replace this use of System.out or System.err by a logger.(²Êâ
+O	java:S106ì"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+O	java:S106ï"9Replace this use of System.out or System.err by a logger.(Èîâ
+O	java:S106ù"9Replace this use of System.out or System.err by a logger.(²Êâ
+O	java:S106ı"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+O	java:S106"9Replace this use of System.out or System.err by a logger.(Èîâ
+i
+java:S1192­"RDefine a constant instead of duplicating this literal "Contact not found" 6 times.(²Êâ
+k
+java:S1192Œ"TDefine a constant instead of duplicating this literal "There was a problem" 9 times.(Èîâ

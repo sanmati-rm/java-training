@@ -1,0 +1,33 @@
+
+P	java:S125""<This block of commented-out lines of code should be removed.(õñÖ
+Q	java:S125$"<This block of commented-out lines of code should be removed.(Ù¿¸Ö
+V	java:S125'"<This block of commented-out lines of code should be removed.(´ØÏêúÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(«ŞÎÕ
+Q	java:S125+"<This block of commented-out lines of code should be removed.(ÈÏÂ©
+V	java:S125-"<This block of commented-out lines of code should be removed.(äÿëûÿÿÿÿ
+V	java:S1252"<This block of commented-out lines of code should be removed.(Êÿ™‡ùÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(’²ÿ­ûÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.( öŠÔ
+M	java:S106D"9Replace this use of System.out or System.err by a logger.(ø 
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(ö›ÈÙ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(ö›ÈÙ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(ÌĞÊ×şÿÿÿÿ
+S	java:S106Z"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(ØĞ à
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(ËŠ”´ÿÿÿÿÿ
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(Úš¡‚úÿÿÿÿ
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(ÚÛ¡ñıÿÿÿÿ
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+g
+java:S3457†"Q%n should be used in place of \n to produce the platform-specific line separator.(Ï±%
+N	java:S106†"9Replace this use of System.out or System.err by a logger.(Ï±%
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ãÂœò
+O	java:S106‹"9Replace this use of System.out or System.err by a logger.(Èîâ
+V	java:S106•"9Replace this use of System.out or System.err by a logger.(²Êâ8ƒ Ş—À/
+V	java:S106—"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8ƒ Ş—À/
+V	java:S106š"9Replace this use of System.out or System.err by a logger.(Èîâ8„ Ş—À/
+W	java:S125¡"<This block of commented-out lines of code should be removed.(Î‘÷ÿüÿÿÿÿ
+b
+java:S1128"@Remove this unused import 'com.target.training.dao.ContactsDao'.(ïñ„¬üÿÿÿÿ8ôÀÙ—À/
+R
+java:S1144Ÿ"6Remove this unused private "getContactByEmail" method.(Ç°ì¨üÿÿÿÿ

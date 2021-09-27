@@ -1,0 +1,14 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(³®Í”øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¼—µ¦
+N	java:S106"9Replace this use of System.out or System.err by a logger.(õÑ˜×
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(¼Úì¿ýÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ðÝ…®úÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(ðòÏé
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(×•œ²
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(´ ¿½
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(ˆë¼±
+V
+java:S1126D"AReplace this if-then-else statement by a single return statement.(Ïž®
+n
+java:S1488>"YImmediately return this expression instead of assigning it to the temporary variable "d".(…æ§
