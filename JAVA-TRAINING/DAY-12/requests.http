@@ -1,0 +1,9 @@
+GET /api/books
+Host: localhost:8080
+Accept: application/json
+
+###
+
+GET /api/books/3
+Host: localhost:8080
+Accept: application/json
