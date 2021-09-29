@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -30,8 +31,6 @@ public class Order {
     @Temporal(TemporalType.TIMESTAMP)
     private Date shippedDate;
 
-    @Column(name="SHIP_VIA")
-    private Integer shipVia;
     private Double freight;
     @Column(name="SHIP_NAME")
     private String shipName;
@@ -53,5 +52,13 @@ public class Order {
     @OneToOne
     @JoinColumn(name="EMPLOYEE_ID")
     private Employee employeeId;
+
+    @ManyToOne
+    @JoinColumn(name="SHIP_VIA")
+    private Shipper shipVia;
+
+    @OneToMany
+    @JoinColumn(name="ORDER_ID")
+    private List<OrderDetails> orderDetailsList;
 
 }
