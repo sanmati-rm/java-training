@@ -1,0 +1,39 @@
+GET /api/employees/9
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/employees
+Host: localhost:9090
+Accept: application/json
+
+###
+
+GET /api/employees/count
+Host: localhost:9090
+Accept: application/json
+
+###
+
+POST /api/employees
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+{
+  "employeeId": 10,
+  "firstname": "Sanmati",
+  "lastname": "R M",
+  "title": "Sales Representative",
+  "titleOfCourtesy": "Ms.",
+  "birthDate": "1966-01-21T18:30:00.000+00:00",
+  "hireDate": "1994-11-14T18:30:00.000+00:00",
+  "address": "7 Houndstooth Rd.",
+  "city": "London",
+  "region": null,
+  "postalCode": "WG2 7LT",
+  "country": "UK",
+  "homePhone": "(71) 555-4444",
+  "extension": "452",
+  "reportsTo": 5
+}

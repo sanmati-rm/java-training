@@ -1,0 +1,111 @@
+GET /api/products/77
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/products/78
+Host: localhost:9090
+Accept: application/xml
+
+###
+GET /api/products/45
+Host: localhost:9090
+Accept: text/plain
+
+###
+
+GET /api/products
+Host: localhost:9090
+Accept: application/json
+
+###
+
+###
+
+# expecting 3rd page (assuming page size is 10)
+GET /api/products?_page=3
+Host: localhost:9090
+Accept: application/json
+
+###
+# expecting 3rd page (assuming page size is 15)
+GET /api/products?_page=3&_limit=15
+Host: localhost:9090
+Accept: application/json
+
+###
+
+GET /api/products/filter?discontinued=true
+Host: localhost:9090
+Accept: application/json
+
+###
+
+GET /api/products/filter?discontinued=false
+Host: localhost:9090
+Accept: application/json
+
+###
+
+GET /api/products/filter?min=100&max=1000
+Host: localhost:9090
+Accept: application/json
+
+###
+
+POST /api/products
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+{
+  "productName": "Sprite Soda",
+  "categoryId": 1,
+  "supplierId": 1,
+  "quantityPerUnit": "15 boxes",
+  "unitPrice": 20.0,
+  "unitsInStock": 32,
+  "unitsOnOrder": 0,
+  "reorderLevel": 15,
+  "discontinued": 0
+}
+
+###
+
+PUT /api/products/78
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+{
+  "productId":78,  
+  "productName": "Sprite Soda",
+  "categoryId": 1,
+  "supplierId": 1,
+  "quantityPerUnit": "15 boxes",
+  "unitPrice": 21.0,
+  "unitsInStock": 32,
+  "unitsOnOrder": 0,
+  "reorderLevel": 15,
+  "discontinued": 0
+}
+
+###
+
+DELETE /api/products/78
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+{
+  "productId":78,  
+  "productName": "Sprite Soda",
+  "categoryId": 1,
+  "supplierId": 1,
+  "quantityPerUnit": "15 boxes",
+  "unitPrice": 21.0,
+  "unitsInStock": 32,
+  "unitsOnOrder": 0,
+  "reorderLevel": 15,
+  "discontinued": 0
+}
