@@ -1,0 +1,56 @@
+version: '3'
+
+services: # docker run
+    mysql8server:
+        container_name: mysql8server # --name mysql8server
+        ports: # -p 3306:3306 -p 33060:33060
+            - '3306:3306'
+            - '33060:33060'
+        volumes: # -v mysql_data:/var/lib/mysql
+            - 'mysql_data:/var/lib/mysql'
+        environment: # -e MYSQL_ROOT_PASSWORD=root
+            - MYSQL_ROOT_PASSWORD=root
+        image: 'mysql:latest' # mysql:latest
+
+    customer-service:
+        container_name: customer-service
+        ports:
+            - '8080:8080'
+        environment:
+            - MYSQL_HOST=mysql8server
+        depends_on:
+            - mysql8server
+            - eureka-service
+        image: 'customer-service:latest'
+
+    gateway-service:
+        container_name: gateway-service
+        ports:
+            - '5000:5000'
+        restart: always
+        depends_on:
+            - mysql8server
+            - eureka-service
+        environment:
+            - MYSQL_HOST=mysql8server
+            - CUSTOMER_SERVICE_HOST=customer-service
+#            - EMPLOYEE_SERVICE_HOST=employee-service
+#            - PRODUCT_SERVICE_HOST=product-service
+        image: 'gateway-service:latest'
+
+    eureka-service:
+        container_name: eureka-service
+        ports:
+            - '8761:8761'
+        restart: always
+        environment:
+            - MYSQL_HOST=mysql8server
+            - CUSTOMER_SERVICE_HOST=customer-service
+        #            - EMPLOYEE_SERVICE_HOST=employee-service
+        #            - PRODUCT_SERVICE_HOST=product-service
+        image: 'eureka-service:latest'
+
+volumes:
+    mysql_data:
+        name: mysql_data
+        driver: local

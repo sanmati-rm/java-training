@@ -10,6 +10,7 @@ public interface EmployeeService {
     Iterable<Employee> getAllEmployees();
     Long getTotalNumberOfEmployees();
     Employee addNewEmployee(Employee e);
+    Employee updateEmployee(Employee e);
 
 
 }

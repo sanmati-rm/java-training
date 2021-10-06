@@ -41,5 +41,17 @@ public class DefaultEmployeeService implements EmployeeService{
         return employeeDao.save(e);
     }
 
+    public Employee updateEmployee(Employee e) {
+        if(e.getEmployeeId() == null){
+            throw new RuntimeException("Employee must have ID for updating");
+        }
+        if(!employeeDao.existsById(e.getEmployeeId()))
+        {
+            throw new RuntimeException("Employee with ID does not exist");
+        }
+
+        return employeeDao.save(e);
+    }
+
 
 }

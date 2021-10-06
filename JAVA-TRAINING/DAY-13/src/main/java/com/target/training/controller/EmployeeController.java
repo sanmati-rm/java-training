@@ -45,4 +45,9 @@ public class EmployeeController {
     Employee handleNewEmployee(@RequestBody Employee e){
         return employeeService.addNewEmployee(e);
     }
+
+    @PutMapping(consumes="application/json",produces ="application/json")
+    Employee handleUpdateEmployee(@RequestBody Employee e){
+        return employeeService.updateEmployee(e);
+    }
 }

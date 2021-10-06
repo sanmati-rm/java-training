@@ -2,6 +2,7 @@ package com.target.training.service;
 
 import com.target.training.dao.ProductDao;
 import com.target.training.entity.Product;
+import com.target.training.exception.ProductNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -42,7 +43,7 @@ public class DefaultProductService implements ProductService{
             throw new RuntimeException("Product must have id for updating");
         }
         if(!productDao.existsById(product.getProductId())){
-            throw new RuntimeException("Product has invalid id. Couldn't update");
+            throw new ProductNotFoundException("Product ID does not exist");
         }
         return productDao.save(product);
     }

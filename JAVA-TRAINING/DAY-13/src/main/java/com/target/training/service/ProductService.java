@@ -2,6 +2,7 @@ package com.target.training.service;
 
 import com.target.training.dao.ProductDao;
 import com.target.training.entity.Product;
+import com.target.training.exception.ProductNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ public interface ProductService{
    //CRUD
    public Product addNewProduct(Product product);
    public Product getProductById(Integer id);
-   public Product updateProduct(Product product);
+   public Product updateProduct(Product product) throws ProductNotFoundException;
    public Product deleteProduct(Integer id);
 
 
