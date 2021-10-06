@@ -1,9 +1,9 @@
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${APP_PORT:9090}
 
 spring:
   application:
-    name: CUSTOMER-SERVICE
+    name: EMPLOYEE-SERVICE
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/northwind
     username: root

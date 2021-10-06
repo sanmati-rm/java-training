@@ -12,16 +12,31 @@ services: # docker run
             - MYSQL_ROOT_PASSWORD=root
         image: 'mysql:latest' # mysql:latest
 
-    customer-service:
-        container_name: customer-service
+    customer-service: # docker run
+        container_name: customer-service # --name=CUSTOMER_SERVICE
         ports:
-            - '8080:8080'
-        environment:
-            - MYSQL_HOST=mysql8server
+            - '8080:8080' # -p 8080:8080
+        restart: always
         depends_on:
             - mysql8server
             - eureka-service
+        environment:
+            - MYSQL_HOST=mysql8server
+            - EUREKA_SERVER_HOST=eureka-service
         image: 'customer-service:latest'
+
+    employee-service: # docker run
+        container_name: employee-service # --name=EMPLOYEE_SERVICE
+        ports:
+            - '8081:8081' # -p 8081:8081
+        restart: always
+        depends_on:
+            - mysql8server
+            - eureka-service
+        environment:
+            - MYSQL_HOST=mysql8server
+            - EUREKA_SERVER_HOST=eureka-service
+        image: 'employee-service:latest'
 
     gateway-service:
         container_name: gateway-service
@@ -33,9 +48,8 @@ services: # docker run
             - eureka-service
         environment:
             - MYSQL_HOST=mysql8server
-            - CUSTOMER_SERVICE_HOST=customer-service
-#            - EMPLOYEE_SERVICE_HOST=employee-service
-#            - PRODUCT_SERVICE_HOST=product-service
+            - APP_PORT=8081
+            - EUREKA_SERVER_HOST=eureka-service
         image: 'gateway-service:latest'
 
     eureka-service:
@@ -43,11 +57,6 @@ services: # docker run
         ports:
             - '8761:8761'
         restart: always
-        environment:
-            - MYSQL_HOST=mysql8server
-            - CUSTOMER_SERVICE_HOST=customer-service
-        #            - EMPLOYEE_SERVICE_HOST=employee-service
-        #            - PRODUCT_SERVICE_HOST=product-service
         image: 'eureka-service:latest'
 
 volumes:
